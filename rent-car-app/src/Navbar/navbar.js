@@ -8,9 +8,10 @@ function Navbar() {
                 <a href="#" className="brand">SamPle</a>
                 <div className="navigation">
                     <div className="navigation-items">
-                        <a href="#">Home</a>
+                        <a href="#">Rent</a>
                         <a href="#">About</a>
                         <a href="#">Order</a>
+                        <a href="#">Rule</a>
                         <a href="#">SignIn</a>
                     </div>
                 </div>

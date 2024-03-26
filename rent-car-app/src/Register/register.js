@@ -1,10 +1,8 @@
 import React from 'react';
 import './register.css'
-import Navbar from '../Navbar/navbar';
 
 function Register() {
     return (
-        <><Navbar />
         <div className='bg-register'>
         <div className="wrapper-register">
             <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
@@ -42,7 +40,6 @@ function Register() {
             </form>
         </div>
         </div>
-        </>
 
     );
 }
