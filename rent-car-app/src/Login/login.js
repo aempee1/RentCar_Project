@@ -3,8 +3,8 @@ import './login.css'
 
 function Login() {
     return (
-       
-            <div className="wrapper">
+       <div className='bg-login' >
+            <div className="wrapper-login">
                 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
                 <form action="">
                     <h1>Login</h1>
@@ -28,6 +28,8 @@ function Login() {
                     </div>
                 </form>
             </div>
+       </div>
+            
       
     );
 }

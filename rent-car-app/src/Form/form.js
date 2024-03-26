@@ -22,7 +22,7 @@ function Form() {
 
   return (
     <div className='bg-form'>
-    <div class = "wrapper">
+    <div class = "wrapper-form">
         <form nSubmit={handleSubmit}>
             <h1 class="topic">Rent Van</h1>
             <div class='input-box-form'>
