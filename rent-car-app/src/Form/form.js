@@ -21,7 +21,7 @@ function Form() {
   }
 
   return (
-    <body>
+    <div className='bg-form'>
     <div class = "wrapper">
         <form nSubmit={handleSubmit}>
             <h1 class="topic">Rent Van</h1>
@@ -55,7 +55,7 @@ function Form() {
             <button class="btn" type="submit">Rent Now</button>
         </form>
     </div>
-    </body>
+    </div>
   )
 }
 
