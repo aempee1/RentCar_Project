@@ -1,18 +1,21 @@
-import React from "react";
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Home/home";
-import Form from "./Form/form";
+import './App.css';
+import Login from './Login/login';
+import Register from './Register/register';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Promo from './Promo/promo';
+import Form from './Form/form';
 
-const App = () => {
- return (
-   <Router>
-       <Routes>
-         <Route path="/" element={<Home />} />
-         <Route path="/form" element={<Form />} />
-       </Routes>
-   </Router>
- );
-};
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path='/' element={<Promo/>}/>
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/form' element={<Form />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
