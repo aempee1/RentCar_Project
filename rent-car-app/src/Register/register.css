@@ -6,12 +6,14 @@
   box-sizing: border-box;
 }
 
+
+
 .bg-register{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height : 100vh;
-  background: url('./login.jpg')no-repeat ;
+  background: url('../image_proj/bg-all.jpg')no-repeat ;
   background-size: cover;
   background-position: center;
 }
