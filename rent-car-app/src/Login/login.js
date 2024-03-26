@@ -28,7 +28,13 @@ function Login() {
                     </div>
                 </form>
             </div>
+<<<<<<< HEAD
          </div>
+=======
+       </div>
+            
+      
+>>>>>>> refs/remotes/origin/main
     );
 }
 

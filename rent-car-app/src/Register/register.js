@@ -4,6 +4,7 @@ import './register.css'
 function Register() {
     return (
         <div className='bg-register'>
+            
         <div className="wrapper-register">
             <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
             <form action="">
