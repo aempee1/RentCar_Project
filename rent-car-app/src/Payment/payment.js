@@ -1,19 +1,18 @@
 import React from 'react';
-import './login.css'
-import { NavLink } from 'react-router-dom';
+import './payment.css'
 
-function Login() {
+function Payment() {
     return (
-       <div className='bg-login'>
-            <div className="wrapper-login">
+       <div className='bg-pay'>
+            <div className="wrapper-pay">
                 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
                 <form action="">
-                    <h1>Login</h1>
-                    <div className="input-box-login">
+                    <h1>Payment</h1>
+                    <div className="input-box-pay">
                         <input type="email" placeholder="Email*" required />
                         <i class='bx bxs-user' ></i>
                     </div>
-                    <div className="input-box-login">
+                    <div className="input-box-pay">
                         <input type="password" placeholder="Password*" required />
                         <i class='bx bxs-lock-alt' ></i>
                     </div>
@@ -22,10 +21,10 @@ function Login() {
                         <a href="#"> Forgot password</a>
                     </div>
 
-                    <button type="submit" className="btn-login">Sign in</button>
+                    <button type="submit" className="btn-pay">Sign in</button>
 
                     <div className="register-link">
-                        <p> don't have an account ? <a><NavLink to='/register'>Register</NavLink></a></p>
+                        <p> don't have an account ? <a href='/register'>Register</a></p>
                     </div>
                 </form>
             </div>
@@ -33,4 +32,4 @@ function Login() {
     );
 }
 
-export default Login
+export default Payment

@@ -6,21 +6,17 @@
   box-sizing: border-box;
 }
 
-
-
-.bg-register{
+.bg-pay {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height : 100vh;
-  background: url('../image_proj/bg-all.jpg')no-repeat ;
-  background-size: cover;
-  background-position: center;
+  background-color: #fff;
 }
 
-.wrapper-register {
+.wrapper-pay {
   width: 420px;
-  background: transparent;
+  background: #000;
   border: 2px solid rgba(255,255,255,.2);
   backdrop-filter: blur(20px);
   box-shadow: 0 0 10px rgba(0,0,0,.2);
@@ -29,20 +25,20 @@
   padding:30px 40px;
 }
 
-.wrapper-register h1{
+.wrapper-pay h1{
   font-size: 56px;
   text-align: center;
   font-family: Cookie ;
 }
 
-.wrapper-register .input-box-register {
+.wrapper-pay .input-box-pay {
   position: relative;
   width: 100%;
   height: 50px;
   margin: 30px 0;
 }
 
-.input-box-register input{
+.input-box-pay input{
   width: 100%;
   height: 100%;
   background:transparent;
@@ -56,12 +52,12 @@
   padding: 20px 45px 20px 20px;
 }
 
-.input-box-register input::placeholder{
+.input-box-pay input::placeholder{
   color: #fff;
 
 }
 
-.input-box-register i{
+.input-box-pay i{
   position: absolute;
   right: 20px;
   top: 50%;
@@ -70,7 +66,7 @@
   
 }
 
-.wrapper-register .remember-forgot{
+.wrapper-pay .remember-forgot{
   display: flex;
   justify-content: space-between;
   font-size: 14.5px;
@@ -91,7 +87,7 @@
 
 }
 
-.wrapper-register .btn-register{
+.wrapper-pay .btn-pay{
   width: 100%;
   height: 45px;
   background: #ffffffc9;
@@ -106,7 +102,7 @@
   font-family: Didact Gothic;
 }
 
-.wrapper-register .register-link{
+.wrapper-pay .register-link{
   font-size: 14px;
   text-align: center;
   margin: 20px 0 15px ;

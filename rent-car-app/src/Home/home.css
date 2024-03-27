@@ -5,4 +5,8 @@
     align-items: center;
     font-size: 150px;
     font-family: 'Cookie';
+    background: url('../image_proj/bg-all.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
