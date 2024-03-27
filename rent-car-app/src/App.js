@@ -3,7 +3,6 @@ import Login from './Login/login';
 import Register from './Register/register';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Promo from './Promo/promo';
-
 import Form from './Form/form';
 
 function App() {
