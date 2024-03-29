@@ -1,5 +1,5 @@
 .anim{
-    animation: show 0.5s;
+    animation: show 0.75s;
 }
 
 @keyframes show {

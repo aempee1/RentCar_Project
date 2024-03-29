@@ -54,14 +54,6 @@ function Slip_page() {
   }
   return (
     <Box>
-      <Typography variant='h5' sx={{ marginBottom: "2rem" }}>{t("TIME")}</Typography>
-      <Box sx={{ display: "flex", alignItems: "center", gridGap: "1rem" }}>
-      <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <TimePicker
-      />
-    </LocalizationProvider>
-      </Box>
-
       <Typography variant='h5' sx={{marginTop: "2rem" }}>{t("IMAGE")}</Typography>
       <Box>
         <Grid container columns={12} spacing={1} justifyContent='center'>
