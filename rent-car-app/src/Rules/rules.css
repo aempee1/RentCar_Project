@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lobster&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body-rules{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height : 100vh;
+  background: url('../image_proj/bg-all.jpg')no-repeat ;
+  background-size: cover;
+  background-position: center;
+    
+}
+
+.title h1{
+    color: #ffffff;
+    text-align: center;
+    padding-top:100px;
+    font-size: 86px;
+    font-family: Lobster;
+}
+
+.title h1::after{
+    content: " ";
+    height:4px;
+    width: 230px;
+    background-color: #fff;
+    display: block;
+    margin:auto;
+}
+
+.services{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 50px ;
+    padding:40px 30px;
+    background-color: #4f535a;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.card:hover{
+    background-color: #000;
+    transform-style: preserve-3d;
+    transform: translateY(-50px);
+    transition: .4s ease-out ;
+
+}
+
+
+.card .icon{
+    font-size: 35px;
+    
+
+}
+
+.card h2{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: Lobster;
+}
+
+.button{
+    margin-top: 30px;
+    font-size: 15px;
+    font-family:  Didact Gothic;
+    text-decoration: none   ;
+    background-color: #FEFDED;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+
+.button:hover{
+    background-color: bisque;
+    transition: 0.4s ease;
+   
+}
+
+@media screen and (max-width: 940px){
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width:85% ;
+        display: flex ;
+        margin: 20px 0px;
+
+    }
+}

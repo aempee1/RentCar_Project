@@ -39,7 +39,7 @@ function Navbar() {
             <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <NavLink to="/rule">Rule</NavLink>
+            <NavLink to="/rules">Rule</NavLink>
           </li>
           <li>
             <Tooltip title="Account settings">
