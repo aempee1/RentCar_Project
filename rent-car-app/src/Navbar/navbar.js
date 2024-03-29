@@ -8,10 +8,9 @@ import MenuItem from '@mui/material/MenuItem';
 import LoginIcon from '@mui/icons-material/Login';
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-//import { deepOrange } from "@mui/material/colors";
-// import ListItemIcon from '@mui/material/ListItemIcon';
-// import Divider from '@mui/material/Divider';
-// import Logout from '@mui/icons-material/Logout';
+import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 
 function Navbar() {
@@ -87,13 +86,15 @@ function Navbar() {
         <MenuItem onClick={handleClose}>
           <PersonAddAlt1Icon  sx={{marginRight: 1, color:'white'}}/> <NavLink className="menu-item" to="/register">Sign Up</NavLink>
         </MenuItem>
-        {/* <Divider/>
+        <MenuItem onClick={handleClose}>
+          <AirportShuttleIcon  sx={{marginRight: 1, color:'white'}}/> <NavLink className="menu-item" to="/order">Order</NavLink>
+        </MenuItem>
         <MenuItem onClick={handleClose}>
           <ListItemIcon>
-            <Logout fontSize="small" sx={{color:"white",}} />
+            <LogoutIcon sx={{color:"white"}} />
           </ListItemIcon>
             <NavLink className="menu-item" to="/">Log Out</NavLink>
-        </MenuItem> */}
+        </MenuItem>
       </Menu>
           </li>
         </ul>
