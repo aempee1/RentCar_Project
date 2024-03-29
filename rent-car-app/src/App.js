@@ -6,6 +6,9 @@ import Form from './Form/form';
 import Home from './Home/home';
 import About from './About/about';
 import Rules from './Rules/rules';
+import Payment from './Payment/Payment';
+import Order from './Order/Order'
+
 function App() {
   return (
     <Router>
@@ -16,6 +19,8 @@ function App() {
         <Route path='/form' element={<Form />} />
         <Route path='/about' element={<About />} />
         <Route path='/rules' element={<Rules />} />
+        <Route path='/payment' element={<Payment />} />
+        <Route path='/order' element={<Order />} />
       </Routes>
     </Router>
   );
