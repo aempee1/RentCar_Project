@@ -22,7 +22,7 @@ function Form() {
   const handleSubmit = (event) => {
     event.preventDefault()
     console.log(formData)
-    history.push('/payment');
+    history('/payment');
   }
 
   return (
@@ -58,7 +58,7 @@ function Form() {
                           <input type="text" placeholder="How many days" name='day' id="day" value={formData.day} onChange={handleChange} required />
                       </div>
                   </div>
-                  <button type="submit" className="btn-form">
+                  <button type="submit" className="btn-form" onClick={handleSubmit}>
                       Rent Now
                   </button>
               </form>
