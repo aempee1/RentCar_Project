@@ -1,5 +1,5 @@
 {
-  "name": "my-rentcar-be",
+  "name": "my-be",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -9,24 +9,23 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
+  "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-cloud": "4.21.0",
-    "@strapi/plugin-i18n": "4.21.0",
-    "@strapi/plugin-users-permissions": "4.21.0",
-    "@strapi/strapi": "4.21.0",
+    "@strapi/strapi": "4.21.1",
+    "@strapi/plugin-users-permissions": "4.21.1",
+    "@strapi/plugin-i18n": "4.21.1",
+    "@strapi/plugin-cloud": "4.21.1",
     "better-sqlite3": "8.6.0",
-    "develop": "^1.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
-    "strapi": "^3.6.11",
     "styled-components": "5.3.3"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "a0b07995-f3e7-4361-a292-9c1f536ce46b"
+    "uuid": "e39d38a1-e01b-4726-97a8-da891dcf794f"
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
