@@ -23,7 +23,7 @@ function Rules() {
                             <p>
                                 but also the leap into electronic typesetting, remaining essentially unchanged.
                                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages </p>
-                            <a href="" class="button">Read More</a>
+                            {/* <a href="" class="button">Read More</a> */}
                         </div>
                         <div className="card">
                             <div className="icon">
@@ -33,7 +33,7 @@ function Rules() {
                             <p>
                                 but also the leap into electronic typesetting, remaining essentially unchanged.
                                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages </p>
-                            <a href="" class="button">Read More</a>
+                            {/* <a href="" class="button">Read More</a> */}
                         </div>
                         <div className="card">
                             <div className="icon">
@@ -43,7 +43,7 @@ function Rules() {
                             <p>
                                 but also the leap into electronic typesetting, remaining essentially unchanged.
                                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages </p>
-                            <a href="" class="button">Read More</a>
+                            {/* <a href="" class="button">Read More</a> */}
                         </div>
                     </div>
                 </div>

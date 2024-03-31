@@ -1,5 +1,10 @@
 .body-about{
-    background: #fff ;
+     background: url('../image_proj/bg-about.jpg') fixed;
+    background-size:cover ;
+    background-position: center;
+    min-height:100vh;
+    /* background: #627254; */
+    
 }
 
 .heading{
@@ -9,10 +14,12 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 .heading h1{
+    margin-top: 50px;
+    color:#DDDDDD;
     font-size:50px;
     margin-bottom: 25px;
     position: relative;
@@ -25,13 +32,14 @@
     height: 4px;
     display: block;
     margin: 0 auto;
-    background-color: #000;
+    background-color: #fff;
 
 }
 
 .heading p{
     font-size:18px;
     margin-bottom: 0px;
+    color: #DDDDDD;
 }
 
 .container{
@@ -42,7 +50,7 @@
 }
 
 .about{
-    padding-top: 30px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,6 +60,7 @@
 .about-image{
     flex: 1;
     margin-right: 90px;
+    margin-bottom: 30px;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -74,12 +83,14 @@
 .about-content h2{
     font-size: 23px;
     margin-bottom: 15px;
+    color: #DDDDDD;
 
 }
 
 .about-content p{
     font-size: 18px;
     line-height: 1.5;
+    color: #DDDDDD;
 
 }
 
@@ -89,7 +100,7 @@
     font-size: 19px;
     text-decoration: none;
     color: #000;
-    background-color: aqua;
+    background-color: #76885B;
     border-radius: 25px;
     margin-top: 15px;
     transition: 0.3s ease;
