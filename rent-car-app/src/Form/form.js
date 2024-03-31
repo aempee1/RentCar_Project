@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './form.css'; // Import the CSS file
 import Navbar from '../Navbar/navbar';
 import {useNavigate} from 'react-router-dom';
-import Payment from '../Payment/Payment'
 
 function Form() {
   const history = useNavigate();
@@ -63,7 +62,7 @@ function Form() {
                   </button>
               </form>
           </div>
-      </div><Payment /></>
+      </div></>
   )
 }
 

@@ -13,10 +13,10 @@ function Order_summary() {
         <TableHead>
           <TableRow>
             <TableCell align='center'>
-              <Typography variant='subtitle1'>{t("Package")}</Typography>
+              <Typography variant='subtitle1' fontFamily={'Didact Gothic'}>{t("Package")}</Typography>
             </TableCell>
             <TableCell align='center'>
-              <Typography variant='subtitle1'>A1</Typography>
+              <Typography variant='subtitle1' fontFamily={'Didact Gothic'}>A1</Typography>
             </TableCell>
           </TableRow>
         </TableHead>
@@ -24,10 +24,10 @@ function Order_summary() {
         <TableHead>
           <TableRow>
             <TableCell align='center'>
-              <Typography variant='subtitle1'>{t("Price")}</Typography>
+              <Typography variant='subtitle1' fontFamily={'Didact Gothic'}>{t("Price")}</Typography>
             </TableCell>
             <TableCell align='center'>
-              <Typography variant='subtitle1'>1,800.00 ฿</Typography>
+              <Typography variant='subtitle1' fontFamily={'Didact Gothic'}>1,800.00 ฿</Typography>
             </TableCell>
           </TableRow>
         </TableHead>
@@ -35,10 +35,10 @@ function Order_summary() {
         <TableHead>
           <TableRow>
             <TableCell align='center'>
-              <Typography variant='subtitle1'>{t("Days")}</Typography>
+              <Typography variant='subtitle1' fontFamily={'Didact Gothic'}>{t("Days")}</Typography>
             </TableCell>
             <TableCell align='center'>
-              <Typography variant='subtitle1'>3</Typography>
+              <Typography variant='subtitle1' fontFamily={'Didact Gothic'}>3</Typography>
             </TableCell>
           </TableRow>
         </TableHead>
@@ -46,14 +46,13 @@ function Order_summary() {
         <TableHead>
           <TableRow>
             <TableCell align='center'>
-              <Typography variant='subtitle1' fontWeight='bold'>{t("Total")}</Typography>
+              <Typography variant='subtitle1' fontWeight='bold' fontFamily={'Didact Gothic'}>{t("Total")}</Typography>
             </TableCell>
             <TableCell align='center'>
-              <Typography variant='subtitle1' fontWeight='bold'>5,400.00 ฿</Typography>
+              <Typography variant='subtitle1' fontWeight='bold' fontFamily={'Didact Gothic'}>31,570.00 ฿</Typography>
             </TableCell>
           </TableRow>
         </TableHead>
-
       </Table>
     </TableContainer>
   )

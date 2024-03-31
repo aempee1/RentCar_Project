@@ -1,17 +1,11 @@
-import { LocalizationProvider, TimePicker } from '@mui/x-date-pickers';
 import { Box, Button, Card, CardContent, CardMedia, Grid, IconButton, styled, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react'
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { useTranslation } from 'react-i18next';
 import CancelIcon from '@mui/icons-material/Cancel';
 
 function Slip_page() {
   const { t, i18n } = useTranslation()
   const [files, setFile] = useState([]);
-  const [startvalue, setstartValue] = useState(new Date());
-  const handleChange = (newValue) => {
-    setstartValue(newValue); // Ensure newValue is a valid Date object
-  };
   const Input = styled('input')({
     display: 'none',
   });
@@ -54,14 +48,14 @@ function Slip_page() {
   }
   return (
     <Box>
-      <Typography variant='h5' sx={{marginTop: "2rem" }}>{t("IMAGE")}</Typography>
+      <Typography variant='h5' sx={{marginTop: "2rem", marginBottom: "0.5rem", textAlign: "center"}} fontFamily='Didact Gothic'>{t("IMAGE")}</Typography>
       <Box>
         <Grid container columns={12} spacing={1} justifyContent='center'>
           {files.map((file, key) => {
             return (
-              <Grid key={key} item lg={3}>
+              <Grid key={key}>
 
-                <Card sx={{ height: 200, width: 200 }}>
+                <Card>
                   <Box sx={{ padding: 0.1 }}>
                     <Box sx={{
                       display: 'flex',
@@ -78,11 +72,10 @@ function Slip_page() {
                       </IconButton>
                     </Box>
                   </Box>
-                  <CardContent sx={{ height: '30%' }}>
+                  <CardContent>
                     <CardMedia
                       component='img'
-                      height="100%"
-                      width="100%"
+                      height="240px"
                       src={URL.createObjectURL(file)}
                       sx={{
                         objectFit: 'cover'
@@ -90,25 +83,25 @@ function Slip_page() {
                     />
                   </CardContent>
                   <CardContent>
-                    <Typography noWrap variant='subtitle1'>{file.name}</Typography>
+                    <Typography noWrap variant='subtitle1' fontFamily='Didact Gothic'>{file.name}</Typography>
                   </CardContent>
-
                 </Card>
-
               </Grid>
             )
           })}
         </Grid>
         <Box sx={{
-          marginTop: '1rem',
-          marginBottom: '1rem'
+          marginTop: '0.5rem',
+          marginBottom: '0.5rem'
         }}>
+          <div className='container'>
           <label htmlFor="contained-button-file">
             <Input onChange={handlerFile} aria-hidden accept=".png, .jpg, .jpeg" id="contained-button-file" multiple type="file" />
-            <Button variant="contained" sx={{ backgroundColor: "#1565c0" , marginTop: "2rem" }} component="span">
-              {t("Upload")}
+            <Button variant="contained" sx={{ backgroundColor: "#1565c0" , marginTop: "0.1rem", alignItems: "center"}} component="span">
+              <Typography fontFamily={'Didact Gothic'} fontWeight={1000} alignItems={'center'}>{t("Upload")}</Typography>
             </Button>
           </label>
+          </div>
         </Box>
       </Box>
     </Box>

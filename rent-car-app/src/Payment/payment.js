@@ -12,9 +12,9 @@ function Payment() {
     const { t, i18n } = useTranslation()
 
     const steps = [
-        t('Mobile Banking'),
-        t('Order Summary'),
-        t('Bill'),
+        <div className='font-text'>{t('Qr Promtpay')}</div>,
+        <div className='font-text'>{t('Order Summary')}</div>,
+        <div className='font-text'>{t('Bill')}</div>,
     ];
     const [activeStep, setActiveStep] = useState(0);
     const [skipped, setSkipped] = useState(new Set());
@@ -87,13 +87,13 @@ function Payment() {
                                     margin: "0 auto",
                                     color: "green"
                                 }}  className="anim" />
-                                <Typography variant='h6' fontWeight='bold'>
+                                <Typography variant='h6' fontWeight='bold' fontFamily={"Didact Gothic"}>
                                     {t("Thank you for your renting.")}
                                 </Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                                 <Box sx={{ flex: '1 1 auto' }} />
-                                <Button onClick={() => changepage("")} sx={{ pl: 4 }}>{t("Back to Home")}</Button>
+                                <Button onClick={() => changepage("")}>{t("Back to Home")}</Button>
                             </Box>
                         </React.Fragment>
                     ) : (
@@ -103,7 +103,7 @@ function Payment() {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 padding: '1rem',
-                                height: '30rem'
+                                height: '30rem',
                             }}>
                                 {paymentstep[activeStep]}
                             </Box>
@@ -114,11 +114,12 @@ function Payment() {
                                     onClick={handleBack}
                                     sx={{ mr: 1 }}
                                 >
-                                    {t("Back")}
+                                    <div className='font-text'>{t("Back")}</div>
                                 </Button>
                                 <Box sx={{ flex: '1 1 auto' }} />
                                 <Button onClick={handleNext}>
-                                    {activeStep === steps.length - 1 ? t('Finish') : t('Next')}
+                                    {activeStep === steps.length - 1 ?
+                                    <div className='font-text'>{t('Finish')}</div>  :  <div className='font-text'>{t('Next')}</div>}
                                 </Button>
                             </Box>
                         </React.Fragment>

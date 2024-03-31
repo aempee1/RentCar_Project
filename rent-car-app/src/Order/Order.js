@@ -22,6 +22,17 @@ const status=[
 const rows = [
   createData('Package A1', 3, "1,800 ฿", status[0]),
   createData('Package A2', 1, "1,800 ฿", status[2]),
+  createData('Package A2', 1, "1,800 ฿", status[2]),
+  createData('Package A2', 1, "1,800 ฿", status[2]),
+  createData('Package A2', 1, "1,800 ฿", status[2]),
+  createData('Package A2', 1, "1,800 ฿", status[2]),
+  createData('Package A2', 1, "1,800 ฿", status[2]),
+  createData('Package A2', 1, "1,800 ฿", status[2]),
+  createData('Package A2', 1, "1,800 ฿", status[2]),
+  createData('Package A2', 1, "1,800 ฿", status[2]),
+  createData('Package A2', 1, "1,800 ฿", status[2]),
+  createData('Package A2', 1, "1,800 ฿", status[2]),
+  createData('Package A2', 1, "1,800 ฿", status[2]),
   createData('Package A3', 2, "1,800 ฿", status[1]),
   createData('Package A2', 4, "1,800 ฿", status[2]),
   createData('Package A2', 4, "1,800 ฿", status[2]),
@@ -34,26 +45,26 @@ export default function BasicTable() {
   return (
     <div className='order-wrap'>
         <Navbar/>
-    <TableContainer sx={{width:1200,
-    border: "3px solid rgba(255, 255, 255, .2)",
-    borderRadius:"20px",
+        <div className="table_title">My Order</div>
+    <TableContainer sx={{width:1200, maxHeight:500,
+    borderRadius:"15px",
+    border:"2px solid rgb(38, 80, 115)",
     filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',}} component={Paper}>
-      <Table sx={{ minWidth: 650,}} aria-label="simple table">
+      <Table stickyHeader sx={{ minWidth: 650,}} aria-label="simple table">
         <TableHead>
-            <div className="table_title">My Order</div>
           <TableRow >
-            <TableCell width={200} align="center">
+            <TableCell width={200} align="center" sx={{backgroundColor: '#265073'}}>
                 <div className="table_head">
                 Order
                 </div>
             </TableCell>
-            <TableCell className="table_head" align="center"> <div className="table_head">
+            <TableCell className="table_head" align="center" sx={{backgroundColor: '#265073'}}> <div className="table_head">
                 Days
                 </div></TableCell>
-            <TableCell className="table_head" align="center"> <div className="table_head">
+            <TableCell className="table_head" align="center" sx={{backgroundColor: '#265073'}}> <div className="table_head">
                 Price
                 </div></TableCell>
-            <TableCell className="table_head" align="center"> <div className="table_head">
+            <TableCell className="table_head" align="center" sx={{backgroundColor: '#265073'}}> <div className="table_head">
                 Status
                 </div></TableCell>
           </TableRow>

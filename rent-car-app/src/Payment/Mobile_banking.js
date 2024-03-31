@@ -1,13 +1,8 @@
 import { Box, Card, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material'
-import { padding } from '@mui/system'
 import React from 'react'
-import { useTranslation } from 'react-i18next'
-import KTB from '../../src/image_proj/KTB.jpg'
-import SCB from '../../src/image_proj/SCB.jpg'
+import QR from '../../src/image_proj/qr.webp'
 
 function Mobile_banking() {
-
-  const { t, i18n } = useTranslation()
 
   return (
     <Box sx={{
@@ -15,54 +10,18 @@ function Mobile_banking() {
     }}>
           <Grid container spacing={2} columns={12} justifyContent="center">
             <Grid item>
-              <Card>
+              <div className='title_qr'>Scan Here</div>
+              <Card >
                 <CardMedia
                   component="img"
-                  height='100'
-                  image={KTB}
+                  height='100%'
+                  image={QR}
                   alt="green iguana"
                   sx={{
                     objectFit : 'cover',
-                    width : 300
+                    width : 350,
                   }}
                 />
-                <CardContent>
-                  <Typography variant="h6" fontWeight='bold'>
-                    {t("KRUNGTHAI BANK")}
-                  </Typography>
-                  <Typography variant="h6">
-                    บ.paipaw.จำกัด มหาชน
-                  </Typography>
-                  <Typography variant="h6">
-                    814-032451-7
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-
-            <Grid item>
-            <Card>
-              <CardMedia
-                component="img"
-                image={SCB}
-                height='100'
-                alt="green iguana"
-                sx={{
-                  objectFit : 'cover',
-                  width : 300
-                }}
-              />
-              <CardContent>
-                <Typography variant="h6" fontWeight='bold'>
-                  {t("The Siam Commercial Bank")}
-                </Typography>
-                <Typography variant="h6">
-                  บ.paipaw.จำกัด มหาชน
-                </Typography>
-                <Typography variant="h6">
-                  609-256212-3
-                </Typography>
-              </CardContent>
               </Card>
             </Grid>
           </Grid>

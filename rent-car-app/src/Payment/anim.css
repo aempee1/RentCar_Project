@@ -1,3 +1,26 @@
+.font-text{
+    font-family: 'Didact Gothic';
+    font-size:medium;
+}
+
+.text-tbl{
+    font-family:'Cookie';
+}
+.container {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+  }
+
+.title_qr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1000;
+    margin: 10px;
+    font-size: 24px;
+}
+
 .anim{
     animation: show 0.75s;
 }
