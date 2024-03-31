@@ -6,7 +6,7 @@ import Form from './Form/form';
 import Home from './Home/home';
 import About from './About/about';
 import Rules from './Rules/rules';
-import Payment from './Payment/payment';
+import Payment from './Payment/Payment';
 import Order from './Order/Order'
 
 function App() {
