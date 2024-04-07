@@ -1,4 +1,6 @@
 import React from "react";
+import { useState,useEffect } from "react";
+import axios from "axios";
 import './rules.css'
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
@@ -6,6 +8,21 @@ import AssistantPhotoIcon from '@mui/icons-material/AssistantPhoto';
 import Navbar from '../Navbar/navbar'
 
 function Rules() {
+    const [dataru, setDataru] = useState();
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const res = await axios.get("http://localhost:1337/api/rules");
+                setDataru(res.data.data);
+                console.log(res.data.data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return(
         <><Navbar />
@@ -15,36 +32,21 @@ function Rules() {
                         <h1> Rules </h1>
                     </div>
                     <div className="services">
-                        <div className="card">
+                        {dataru && dataru.map((item) => {
+                            console.log(item)
+                            return (
+                            <div className="card">
                             <div className="icon">
                                 <AirportShuttleIcon sx={{ fontSize: 70, color: "#fff" }}></AirportShuttleIcon>
                             </div>
-                            <h2>Rules 1</h2>
+                            <h2>{item.attributes.rule_topic}</h2>
                             <p>
-                                but also the leap into electronic typesetting, remaining essentially unchanged.
-                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages </p>
+                                {item.attributes.rule_description} </p>
                             {/* <a href="" class="button">Read More</a> */}
                         </div>
-                        <div className="card">
-                            <div className="icon">
-                                <AssignmentIndIcon sx={{ fontSize: 70, color: "#fff" }}></AssignmentIndIcon>
-                            </div>
-                            <h2>Rules 2</h2>
-                            <p>
-                                but also the leap into electronic typesetting, remaining essentially unchanged.
-                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages </p>
-                            {/* <a href="" class="button">Read More</a> */}
-                        </div>
-                        <div className="card">
-                            <div className="icon">
-                                <AssistantPhotoIcon sx={{ fontSize: 70, color: "#fff" }}></AssistantPhotoIcon>
-                            </div>
-                            <h2>Rules 3</h2>
-                            <p>
-                                but also the leap into electronic typesetting, remaining essentially unchanged.
-                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages </p>
-                            {/* <a href="" class="button">Read More</a> */}
-                        </div>
+                            )
+                        })}
+                       
                     </div>
                 </div>
             </div>
