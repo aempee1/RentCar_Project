@@ -2,6 +2,10 @@ import { useState } from 'react';
 import React from 'react';
 import './login.css'
 import { NavLink ,useNavigate} from 'react-router-dom';
+import Swal from "sweetalert2";
+import axios from "axios";
+import Cookies from 'js-cookie';
+
 
 function Login() {
     const navigate = useNavigate();
@@ -12,21 +16,43 @@ function Login() {
     })
     const handleLogin = (e) => {
         e.preventDefault(e);
-        console.log(login);
-        navigate('/form')
-        // if (register.confirm_password != register.password) {
-        //     alert("รหัสผ่านที่ยืนยันไม่ตรงกับรหัสผ่านที่ป้อน");
-        //     // ทำการล้างค่ารหัสผ่านทั้งคู่ใหม่
-        //     setRegister({
-        //         ...register,
-        //         password: "",
-        //         confirm_password: ""
-        //     });
-
-        // }else{
-        //     console.log(register)
-        //     navigate('/login')
-        // }
+        const loginDataToSend = {
+            identifier: login.email, // This could be email or username
+            password: login.password,
+          };
+          
+          let url = "http://localhost:1337/api/auth/local";
+          
+          axios
+            .post(url, loginDataToSend)
+            .then((response) => {
+              // Clear login form after successful login
+              setLogin({
+                email: "",
+                password: "",
+              });
+          
+              // Store token in cookie
+              Cookies.set('token', response.data.jwt);
+          
+              Swal.fire({
+                title: "Login Successful!",
+                text: "You are now logged in.",
+                icon: "success",
+              });
+              console.log(response);
+              // Navigate to the desired page after successful login
+              navigate("/form");
+            })
+            .catch((error) => {
+              console.error("Login failed:", error);
+              Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Login failed. Please check your credentials and try again.",
+              });
+            });
+          
     
 
     }

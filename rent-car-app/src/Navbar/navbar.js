@@ -80,12 +80,12 @@ function Navbar() {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
-        <MenuItem onClick={handleClose}>
+        {/* <MenuItem onClick={handleClose}>
           <LoginIcon sx={{marginRight: 1, color:'white'}}/> <NavLink className="menu-item" to="/login">Sign In</NavLink>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <PersonAddAlt1Icon  sx={{marginRight: 1, color:'white'}}/> <NavLink className="menu-item" to="/register">Sign Up</NavLink>
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem onClick={handleClose}>
           <AirportShuttleIcon  sx={{marginRight: 1, color:'white'}}/> <NavLink className="menu-item" to="/order">Order</NavLink>
         </MenuItem>

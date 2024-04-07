@@ -55,7 +55,7 @@ function Home() {
           <p>
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
           </p>
-          <a href="/form">Rent Now</a>
+          <a href="/login">Sign In</a>
         </div>
         <div className={`Content ${select[2]}`}>
           <h1>
@@ -66,7 +66,7 @@ function Home() {
           <p>
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
           </p>
-          <a href="/form">Rent Now</a>
+          <a href="/login">Sign In</a>
         </div>
         <div className={`Content ${select[3]}`}>
           <h1>
@@ -77,9 +77,9 @@ function Home() {
           <p>
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
           </p>
-          <a href="/form">Rent Now</a>
+          <a href="/login">Sign In</a>
         </div>
-        <div className={`Content ${select[4]}`}>
+        {/* <div className={`Content ${select[4]}`}>
           <h1>
             Mazed
             <br />
@@ -88,7 +88,7 @@ function Home() {
           <p>
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
           </p>
-          <a href="/form">Rent Now</a>
+          <a href="/login">Sign In</a>
         </div>
         <div className={`Content ${select[5]}`}>
           <h1>
@@ -99,7 +99,7 @@ function Home() {
           <p>
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
           </p>
-          <a href="/form">Rent Now</a>
+          <a href="/login">Sign In</a>
         </div>
         <div className={`Content ${select[6]}`}>
           <h1>
@@ -110,8 +110,8 @@ function Home() {
           <p>
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
           </p>
-          <a href="/form">Rent Now</a>
-        </div>
+          <a href="/login">Sign In</a>
+        </div> */}
         <div className="media-icons">
           <a href="https://web.facebook.com/LIPE-RETRO-105513872095385">
             <i className="fab fa-facebook-f"></i>
@@ -127,9 +127,9 @@ function Home() {
           <div onClick={handleClick} id={1} className={`nav-btn ${select[1]}`}></div>
           <div onClick={handleClick} id={2} className={`nav-btn ${select[2]}`}></div>
           <div onClick={handleClick} id={3} className={`nav-btn ${select[3]}`}></div>
-          <div onClick={handleClick} id={4} className={`nav-btn ${select[4]}`}></div>
+          {/* <div onClick={handleClick} id={4} className={`nav-btn ${select[4]}`}></div>
           <div onClick={handleClick} id={5} className={`nav-btn ${select[5]}`}></div>
-          <div onClick={handleClick} id={6} className={`nav-btn ${select[6]}`}></div>
+          <div onClick={handleClick} id={6} className={`nav-btn ${select[6]}`}></div> */}
         </div>
       </section>
     </>

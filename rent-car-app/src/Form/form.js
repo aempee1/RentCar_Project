@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './form.css'; // Import the CSS file
 import Navbar from '../Navbar/navbar';
 import { useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie';
 
 function Form() {
     const history = useNavigate();
@@ -13,6 +14,8 @@ function Form() {
         day: null,
         date: null,
     })
+
+    const token = Cookies.get('token')
 
     const handleChange = (event) => {
         setFormData({ ...formData, [event.target.name]: event.target.value })
@@ -35,7 +38,7 @@ function Form() {
     
         fetch(url, {
             method: "POST",
-            headers: { "Content-type": "application/json" },
+            headers: { "Content-type": "application/json", "Authorization": `Bearer ${token}` },
             body: JSON.stringify(formDataToSend),
         })
         .then((response) => {
@@ -70,14 +73,14 @@ function Form() {
                             <input type="email" placeholder="E-mail" name='email' id="email" value={formData.email} onChange={handleChange} required />
                         </div>
                     </div>
-                    <div class='input-box-form'>
+                    {/* <div class='input-box-form'>
                       <select class='selected' placeholder="package" name='package' id="package" value={formData.package} onChange={handleChange} required>
                           <option value="">Choose a package</option>
                           <option value="package1">Package 1</option>
                           <option value="package2">Package 2</option>
                           <option value="package3">Package 3</option>
                       </select>
-                  </div>
+                  </div> */}
                     <div class='set-col'>
                         <div class='input-box-form'>
                             <input type="date" name="date" id="date" value={formData.date} onChange={handleChange} required />
